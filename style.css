@@ -1,0 +1,527 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Universal page stuff */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a{ text-decoration: none; }
+
+ul{ list-style: none; }
+
+table
+{ 
+margin-left: auto;
+margin-right: auto;
+}
+
+form#reg-form
+{
+	padding:25px;
+	text-align:center;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.blue1 {
+	color:#1240AB;
+}
+
+.blue2 {
+	color:#2A4480;
+}
+
+.blue3 {
+	color:#06266F;
+}
+
+.blue4 {
+	color:#4671D5;
+}
+
+.blue5 {
+	color:#6C8CD5;
+}
+
+.yellow1 {
+	color:#FFAA00;
+}
+
+.yellow2 {
+	color:#BF8F30;
+}
+
+.yellow3 {
+	color:#A66F00;
+}
+
+.yellow4 {
+	color:#FFBF40;
+}
+
+.yellow5 {
+	color:#FFD073;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+h1 {
+	font-weight:normal;
+	font-size:2.4em;
+}
+
+h2 {
+	font-weight:normal;
+	font-size:1.8em;
+}
+
+#bold {
+	font-weight:bold;
+}
+
+p {
+	font-size:1.2em;
+}
+
+div#margin-center {
+	margin: 0 auto;
+}
+
+body {
+	font-size: 62%;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background: #141616;
+}
+
+div#outer-container {
+	background:#FFF;
+	width:960px;
+	min-height:600px;
+	margin:0 auto;
+}
+
+div#content-container {
+	padding:50px 100px;
+}
+
+li {
+	font-size:1.2em;
+}
+
+div#page-wrap {
+	margin: 0 auto;
+	height:auto;
+}
+/*end universal page stuff*/
+
+/*header stuff*/
+/*top navigation menu*/
+div#header-container {
+	width:100%;
+	background: url(../images/gray-box.png);
+}
+
+div#header-top {
+	height:50px;
+	width:960px;
+	margin:0 auto;
+	background: url(../images/header-top.png) no-repeat;
+}
+div#header-bottom {
+	height:30px;
+	width:960px;
+	margin:0 auto;
+	background:url(../images/header-bottom.png) no-repeat;
+}
+
+table#sign-in {
+	}
+	table#sign-in a:link, table#sign-in a:visited {
+		color:#FFF;
+		padding-right:0;
+		font-size:1.0em;
+		font-family:Arial, Helvetica, sans-serif;
+		margin-bottom:0;
+		text-decoration:none;
+	}	
+
+/*  
+	LEVEL ONE
+*/
+ul.dropdown                         { height:30px; }
+ul.dropdown li                      { float: left; zoom: 1;display:block;height:20px;padding:5px 0px;color:#FFF;font-weight:normal;text-align:center;}
+ul.dropdown a:active                { color: #CCC; }
+ul.dropdown li a                    { display: block; padding: 4px 8px;color: #FFF; }
+ul.dropdown li:last-child a         { border: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                {  }
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ visibility: hidden; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: #f6f6f6; text-align:left; 
+									  border-bottom: 1px solid #ccc; float: none; }
+ul.dropdown ul li.hover,
+ul.dropdown ul li:hover				{ background: #e6e6e6; color: black; }
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; color: black; }
+
+
+/*********navigation menu**********/
+
+ul#dropdown-nav                         { width:360px; padding-left:600px }
+ul#dropdown-nav li                      { width:120px; }
+ul#dropdown-nav li.hover,
+ul#dropdown-nav li:hover                { background:url(../images/blue-box.png) }
+
+ul#dropdown-nav ul 						{ width: 220px; }
+
+
+/**********profile menu************/
+
+ul#dropdown-profile                         { width:150px; float:right }
+ul#dropdown-profile li                      { width:150px; }
+ul#dropdown-profile li.hover,
+ul#dropdown-profile li:hover                { background:#3a3a3a }
+
+ul#dropdown-profile ul 						{ width: 150px; height:30px}
+ul#dropdown-profile ul li 					{ font-size:.8em; }
+ul#dropdown-profile ul li.hover,
+ul#dropdown-profile ul li:hover                { background:#CCC }
+
+	
+/*end header stuff*/
+
+/*footer*/
+div#footer {
+	width:100%;
+	min-height:30px;
+	background: #141616;
+	margin:0 auto;
+}
+
+/*home specific*/
+#for_students{height:130px;width:150px;background:url(../images/for_students_reg.png);}
+#for_students a:hover{background: url(../images/for_sprite.png) 0 -130px;}
+
+/* end home specific*/
+
+/*login & registration spcific*/
+
+div#reg-container {
+	background:#E8E8E8;
+	width:960px;
+	min-height:600px;
+	margin:0 auto;
+}
+
+div#left-box {
+	width:580px;
+	float:left;
+}
+
+div#right-box {
+	width:380px;
+	float:right;
+}
+
+div#about-big-box {
+	min-height:500px;
+	width:500px;
+	margin:0 auto;
+	margin-top: 70px;
+	background:#FFF;
+	border:solid;
+	border-width:thin;
+}
+
+div#about-little-box {
+	min-height:250px;
+	width:330px;
+	margin:155px 25px;
+	background:#FFF;
+	border:solid;
+	border-width:thin;
+}
+
+h1#about {
+	color:#06266F;
+	padding:25px;
+}
+
+p#about {
+	padding:0px 30px;
+	text-align:right;
+}
+
+/*end login & registration specific */
+
+/*browse projects specific*/
+.browse_main_topic {
+color:#06266F;
+font-size:1.6em;
+font-weight:bold;
+padding:10px;
+}
+
+.browse li {
+	margin-left:50px;
+	padding:10px 0px;
+	font-size:1.2em;
+}
+
+.browse a {
+}
+/*end browse specific*/
+
+
+/*project specific*/
+div#outer-project-container {
+	background:#FFF;
+	width:960px;
+	min-height:600px;
+	margin:0 auto;
+	padding:20px 0;
+}
+
+div#project-container {
+	padding:30px;
+	margin:0px 100px;
+	border:solid;
+	border-width:thin;
+	border-color:#000;
+	background:#e8e8e8;
+}
+
+#project-container h2 {
+	font-weight:bold;
+}
+
+#project-container a {
+	font-size:1.3em;
+	color:#06266F;
+}
+
+#project-container p {
+	margin:30px 25px 0 0;
+}
+
+#project-container ul {
+	margin-left:75px;
+	list-style:square;
+}
+
+input.button {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    }
+/*end project specific
+
+
+
+/*profile specific*/
+
+#profile-outer-container {
+	background:url(../images/profile-bg.png);
+	width:960px;
+	min-height:600px;
+	margin:0 auto;
+}
+
+#left-bar-200 {
+	width:200px;
+	float:left;
+}
+	#left-bar-200 a {
+		color:#000;
+	}
+	
+	#left-bar-200 p {
+		font-size:1.4em;
+		margin:0 0 10px 20px;
+	}
+
+profile-container {
+	min-height:600px;
+	height:auto;
+}
+
+div#drop-shadow
+{
+	width:100px;
+	height:100px;
+	margin:50px 0 20px 25px;
+	-webkit-box-shadow: 3px 3px 3px #888888; /* Safari and Chrome */
+	box-shadow: 3px 3px 3px #888888;
+}
+
+div#image-box
+{
+	width:100px;
+	height:100px;
+	margin:50px 0 20px 25px;
+}
+
+#profile-inner-container {
+	padding:50px 0 0 175px;
+	margin:0 auto;
+	width: 650px;
+}
+
+#profile-project-box {
+	width:600px;
+	min-height:100px;
+	background:#E8E8E8;
+	border-style:solid;
+	border-width:thin;
+	border-color:#000;
+	margin:10px 0 0 15px;
+	padding:10px;
+}
+
+	#profile-project-box p {
+		margin:10px 0 0 15px;
+		font-size:1.4em;
+		color:#000;
+	}
+
+#negative-margin {
+	margin-left:-30px;
+}
+
+
+/*end profile specific*/
+
+
+
+
+
+/*Workspace Specific*/
+
+#workspace-header {
+	background:#E8E8E8;
+	min-height:50px;
+	width:760px;
+	border-bottom-style:solid;
+	border-color:#000;
+	border-width:thin;
+	margin-left:200px;
+}
+	#workspace-header h2 {
+		margin:0;
+		padding:0;
+		font-size:1.8em;
+		font-weight:bold;
+	}
+	
+	#workspace-header-blue {
+		color:#06266F;
+		font-size:.8em;
+	}
+
+div#workspace-container {
+	width:750px;
+	height:auto;
+	min-height:450px;
+	margin:50px 0 0 205px;
+	border-style:solid;
+	border-color:#000;
+	border-width:thin;
+	background:#E8E8E8;
+}
+
+	#workspace-container-left {
+		width:130px;
+		height:inherit;
+		min-height:450px;
+		border-right-style:solid;
+		border-color:#000;
+		border-width:thin;
+		float:left;
+	}
+	
+	#workspace-container-middle {
+		float:left;
+		height:inherit;
+		min-height:450px;
+	}
+		
+		#workspace-container-middle a {
+			color:#A66F00;
+		}
+		
+		#workspace-container-middle p {
+		}
+	
+	#workspace-container-right {
+		width:130px;
+		height:inherit;
+		min-height:450px;
+		border-left-style:solid;
+		border-color:#000;
+		border-width:thin;
+		float:right;
+	}
+	
+		#workspace-container-right p {
+			margin:10px 0 0 -5px;
+			font-size:1.2em;
+		}
+		
+		#workspace-container-right a {
+			color:#A66F00;
+			font-weight:bold;
+			font-size:.8em;
+		}
+
+#workspace-feedback-container {
+	width:600px;
+	padding:50px 0 50px 260px;
+	text-align:center;
+}
+	#workspace-feedback-container p {
+		padding:10px;
+		font-weight:bold;
+	}
+
+/*end workspace specific*/
+
+
+
+
+/*registration*/
+
+#registration-container {
+	width:800px;
+	min-height:500px;
+	margin:25 auto;
+	border-style:solid;
+	border-color:#000;
+	border-width:thin;
+	background:#E8E8E8;
+}
+
+	#registration-container h1 {
+		color:#A66F00;
+		padding:25px;
+	}
+
+#inner-registration-container {
+	margin:50px 100px;
+}
+	#inner-registration-container p {
+		font-weight:bold;
+		font-size:1.4em;
+	}
+
+/*end registration*/
